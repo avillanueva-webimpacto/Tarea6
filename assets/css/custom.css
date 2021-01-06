@@ -1,0 +1,287 @@
+    /* CUSTOM */
+    
+    body {
+        background-color: #fff;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #888;
+    }
+    
+    .accordion {
+        max-width: 100%;
+    }
+    
+    .accordion .contentBx {
+        position: relative;
+    }
+    
+    .accordion .contentBx .label-wrapper {
+        position: relative;
+        padding: 5px;
+        background: #d6eed1;
+        color: #458057;
+        cursor: pointer;
+    }
+    
+    .accordion .contentBx .label-wrapper2 {
+        position: relative;
+        padding: 5px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        box-shadow: 20px;
+    }
+    
+    .accordion .contentBx .label-wrapper2::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+    
+    .accordion .contentBx .label-wrapper::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+    
+    .accordion .contentBx.active .label-wrapper2::before {
+        content: '-';
+    }
+    
+    .accordion .contentBx.active .label-wrapper::before {
+        content: '-';
+    }
+    
+    .accordion .contentBx .content2 {
+        position: relative;
+        background: #f2f2f2;
+        color: #000000;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    
+    .accordion .contentBx .content {
+        position: relative;
+        background: #d6eed1;
+        color: #458057;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    
+    .accordion .contentBx.active .content2 {
+        border-radius: 5px;
+        height: 75px;
+        padding: 10px;
+    }
+    
+    .accordion .contentBx.active .content {
+        height: 55px;
+        padding: 10px;
+    }
+    
+    .ml-50 {
+        margin-left: 20px;
+    }
+    
+    .mt-n10 {
+        margin-top: -45px;
+    }
+    
+    .tabPromo {
+        border: 1px dashed #ff6000;
+        background-color: #ffeac9;
+        color: #ff6000;
+    }
+    
+    .ficha-product {
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .button-general {
+        max-width: 100%;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        height: 51px;
+        margin-right: 2px;
+        position: relative;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    .button-movil {
+        max-width: 100%;
+        background: #fff;
+        border: 2px solid #dcdcdc;
+        border-radius: 5px;
+        height: 51px;
+        margin-right: 2px;
+        position: relative;
+        padding: 50px;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    .button-dolar {
+        width: 80%;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
+    .button-dolar-movil {
+        width: 100%;
+        margin-left: 6px;
+        padding: 10px;
+    }
+    
+    .texto-boton {
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    
+    .texto-boton-movil {
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    
+    .texto-boton-ws {
+        font-size: 32px;
+        margin-top: -25px;
+    }
+    
+    .texto-boton-shop {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .texto-boton-buy {
+        font-size: 32px;
+    }
+    
+    .texto-boton-shop:hover {
+        color: #ff6000;
+        transition: all .2s ease-in;
+    }
+    
+    .texto-boton:hover {
+        color: #ff6000;
+        transition: all .7s;
+        transform: translateY(-10px);
+    }
+    
+    .button-buy {
+        max-width: 100%;
+        color: #fff;
+        background: #ff6000;
+        border: 2px solid #ff6000;
+        border-radius: 5px;
+        height: 51px;
+        margin-right: 2px;
+        position: relative;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    .button-buy-movil {
+        max-width: 100%;
+        color: #fff;
+        background: #ff6000;
+        border: 2px solid #ff6000;
+        border-radius: 5px;
+        height: 51px;
+        margin-left: -10px;
+        padding: 0 62px 0 62px;
+        position: relative;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    .button-ws {
+        max-width: 100%;
+        background: #00d561!important;
+        border: 2px solid #00d561;
+        border-radius: 4px;
+        height: 51px;
+        margin-right: 2px;
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .texto-boton-buy {
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    
+    .texto-boton-buy-ws {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .button-buy:hover {
+        background: #e1600a;
+        border-color: #e1600a;
+    }
+    
+    p::selection {
+        background: #e1600a;
+        color: #ffffff;
+    }
+    
+    a::selection {
+        background: #e1600a;
+        color: #ffffff;
+    }
+    
+    html::selection {
+        background: #e1600a;
+        color: #ffffff;
+    }
+    
+    h1::selection {
+        background: #e1600a;
+        color: #ffffff;
+    }
+    
+    img::selection {
+        background: #e1600a;
+        color: #ffffff;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .mobile-section {
+        background: #fff;
+        bottom: 0;
+        box-shadow: 0 -5px 15px -3px rgba(0, 0, 0, .23);
+        height: 70px;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .
